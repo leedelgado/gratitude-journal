@@ -2,15 +2,18 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-serif: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-garamond), var(--font-lora), ui-serif, Georgia, Cambria, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   body {
-    background-color: #fdfbf7;
-    color: #333333;
-    font-family: var(--font-serif);
-    line-height: 1.8;
+    background-color: #f4ecd8;
+    color: #5b4636;
+    font-family: var(--font-garamond), var(--font-lora), serif;
+    line-height: 1.6;
+    font-variant-numeric: oldstyle-nums;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
